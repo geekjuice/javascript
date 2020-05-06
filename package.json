@@ -1,0 +1,58 @@
+{
+  "name": "@geekjuice/style",
+  "version": "0.0.0",
+  "description": "style",
+  "repository": "geekjuice/style",
+  "author": "nicholas hwang <npm@undefined.engineer>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=10"
+  },
+  "bin": {
+    "style": "index.js"
+  },
+  "files": [
+    "lib",
+    "eslint",
+    "prettier",
+    "index.js"
+  ],
+  "scripts": {
+    "eslint": "eslint",
+    "prettier": "prettier",
+    "tsc": "tsc"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.31.0",
+    "@typescript-eslint/parser": "^2.31.0",
+    "chalk": "^4.0.0",
+    "dedent": "^0.7.0",
+    "eslint": "^7.0.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-react": "^7.19.0",
+    "execa": "^4.0.1",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.2",
+    "meow": "^7.0.0",
+    "prettier": "^2.0.5",
+    "prompts": "^2.3.2",
+    "read-pkg-up": "^7.0.1",
+    "update-notifier": "^4.1.0"
+  },
+  "devDependencies": {
+    "@npm/types": "^1.0.1",
+    "@types/dedent": "^0.7.0",
+    "@types/eslint": "^6.8.0",
+    "@types/meow": "^5.0.0",
+    "@types/node": "^13.13.5",
+    "@types/prettier": "^2.0.0",
+    "@types/prompts": "^2.0.8",
+    "@types/update-notifier": "^4.1.0",
+    "jest": "^26.0.1",
+    "typescript": "^3.8.3"
+  },
+  "peerDependencies": {
+    "typescript": "^3.8.3"
+  }
+}
