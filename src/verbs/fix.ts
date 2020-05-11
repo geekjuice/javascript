@@ -33,10 +33,8 @@ export default async (options: Options, files: Files): Promise<void> => {
     '--write',
   ];
 
-  await Promise.all([
-    attempt(`${BIN}/eslint`, eslint),
-    attempt(`${BIN}/prettier`, prettier),
-  ]);
+  await attempt(`${BIN}/eslint`, eslint);
+  await attempt(`${BIN}/prettier`, prettier);
 
   logger.done();
 };

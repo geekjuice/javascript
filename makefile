@@ -65,3 +65,8 @@ start: build
 publish/next: build
 	npm publish --tag=next
 	$(DONE)
+
+.PHONY: publish/latest
+publish/latest: build
+	npm publish --tag=latest
+	$(DONE)

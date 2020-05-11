@@ -124,8 +124,8 @@ const initPackageJson = async ({ dry, yes }: Options): Promise<void> => {
   } = await updatePackageJson('devDependencies', pkg, dependencies, yes);
 
   const commands = {
-    'style:check': 'style check',
-    'style:fix': 'style fix',
+    check: 'style check',
+    fix: 'style fix',
   };
 
   const {
