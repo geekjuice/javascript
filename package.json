@@ -1,6 +1,6 @@
 {
   "name": "@geekjuice/style",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "personal style guide",
   "repository": "geekjuice/style",
   "author": "nicholas hwang <npm@undefined.engineer>",
@@ -53,6 +53,6 @@
     "typescript": "^4.1.3"
   },
   "peerDependencies": {
-    "typescript": "3.8.3"
+    "typescript": "4.1.3"
   }
 }
