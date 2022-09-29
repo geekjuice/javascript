@@ -1,4 +1,3 @@
 # todo
 
-- add tests
-- add ci
+- update readme for packages

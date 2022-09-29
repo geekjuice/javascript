@@ -1,0 +1,43 @@
+{
+  "name": "@geekjuice/eslint-config",
+  "version": "1.0.0",
+  "description": "personal eslint configuration",
+  "repository": "geekjuice/eslint-config",
+  "author": "nicholas hwang <github@undefined.engineer>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16",
+    "npm": ">=8"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./base": "./base.js",
+    "./next": "./next.js",
+    "./esm": "./rules/esm.js",
+    "./typescript": "./rules/typescript.js"
+  },
+  "dependencies": {
+    "@rushstack/eslint-patch": "^1.2.0",
+    "@typescript-eslint/eslint-plugin": "^5.38.1",
+    "@typescript-eslint/parser": "5.38.1",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-next": "^12.3.1",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-import-resolver-typescript": "^3.5.1",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-react": "^7.31.8",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-unicorn": "^43.0.2"
+  },
+  "peerDependencies": {
+    "eslint": "8.x",
+    "typescript": "4.x"
+  },
+  "peerDependenciesMeta": {
+    "typescript": {
+      "optional": true
+    }
+  }
+}
