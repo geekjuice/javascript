@@ -9,9 +9,10 @@ export default async function prepare() {
   const filepath = 'rules.json';
   const options = { reject: false };
 
-  echo(before(info('applying autofixes...')));
-
+  echo(info('applying linter autofixes...'));
   await execute(commands.eslint, ['--fix', ...flags.eslint, '.'], options);
+
+  echo(info('formatting files...'));
   await execute(
     commands.prettier,
     ['--write', ...flags.prettier, '.'],
@@ -19,30 +20,26 @@ export default async function prepare() {
   );
 
   echo(info('extracting rules to suppress...'));
-
   const { stdout } = await execute(
     commands.eslint,
-    ['--format=json', ...flags.eslint, '.'],
+    ['--format=json', '--quiet', ...flags.eslint, '.'],
     options
   );
   const rules = JSON.parse(stdout).reduce(
     (accumulator, { messages }) => ({
       ...accumulator,
-      ...messages
-        .filter(({ severity }) => severity === 2)
-        .reduce(
-          (acc, { ruleId }) => ({
-            ...acc,
-            [ruleId]: 'warn',
-          }),
-          {}
-        ),
+      ...messages.reduce(
+        (acc, { ruleId }) => ({
+          ...acc,
+          [ruleId]: 'warn',
+        }),
+        {}
+      ),
     }),
     {}
   );
 
   echo(info(`saving rules to ${filepath}...`));
-
   const json = prettier.format(JSON.stringify(rules), {
     parser: 'json-stringify',
   });

@@ -5,6 +5,8 @@ module.exports = {
 
   rules: {
     // jsx-a11y
+    'jsx-a11y/click-events-have-key-events': 'warn',
+    'jsx-a11y/media-has-caption': 'warn',
     'jsx-a11y/no-redundant-roles': 'warn',
 
     // react

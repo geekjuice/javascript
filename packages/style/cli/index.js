@@ -12,7 +12,7 @@ const { blue, bold, cyan, dim, red } = chalk;
 
 const {
   input: [command, ...inputs],
-  flags: { debug, help, overwrite, version },
+  flags: { help, version, debug, quiet, overwrite },
   showHelp,
   showVersion,
 } = meow(
@@ -26,10 +26,11 @@ const {
     ${cyan('fix')}            fix formatting and lint issues
 
   ${dim('options:')}
-    ${blue('--debug')}        show debug output
     ${blue('--help')}         print this help message
-    ${blue('--overwrite')}    overwrite configurations during install
     ${blue('--version')}      print the package version
+    ${blue('--debug')}        show debug output
+    ${blue('--quiet')}        only report errors
+    ${blue('--overwrite')}    overwrite configurations during install
 `,
   {
     importMeta: import.meta,
@@ -84,12 +85,12 @@ try {
     }
 
     case command === 'check': {
-      await check(files);
+      await check(files, quiet);
       break;
     }
 
     case command === 'fix': {
-      await fix(files);
+      await fix(files, quiet);
       break;
     }
 

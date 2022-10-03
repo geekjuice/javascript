@@ -1,6 +1,6 @@
 {
   "name": "@geekjuice/style",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "personal style cli",
   "repository": "geekjuice/style",
   "author": "nicholas hwang <github@undefined.engineer>",
@@ -17,8 +17,8 @@
     "cli"
   ],
   "dependencies": {
-    "@geekjuice/eslint-config": "^1.0.0",
-    "@geekjuice/prettier-config": "^1.0.0",
+    "@geekjuice/eslint-config": "^1.1.0",
+    "@geekjuice/prettier-config": "^1.1.0",
     "chalk": "^5.0.1",
     "dedent": "^0.7.0",
     "eslint": "^8.24.0",
