@@ -10,5 +10,6 @@ module.exports = {
     'prettier',
     require.resolve('./rules/common'),
     require.resolve('./rules/web'),
+    require.resolve('./rules/esm'),
   ],
 };
