@@ -10,6 +10,7 @@ module.exports = {
     'jsx-a11y/no-redundant-roles': 'warn',
 
     // react
+    'react/display-name': 'off',
     'react/function-component-definition': 'off',
     'react/jsx-filename-extension': 'off',
     'react/jsx-props-no-spreading': 'off',

@@ -16,14 +16,14 @@ export default async function prepare() {
   await execute(
     commands.prettier,
     ['--write', ...flags.prettier, '.'],
-    options
+    options,
   );
 
   echo(info('extracting rules to suppress...'));
   const { stdout } = await execute(
     commands.eslint,
     ['--format=json', '--quiet', ...flags.eslint, '.'],
-    options
+    options,
   );
   const rules = JSON.parse(stdout).reduce(
     (accumulator, { messages }) => ({
@@ -33,10 +33,10 @@ export default async function prepare() {
           ...acc,
           [ruleId]: 'warn',
         }),
-        {}
+        {},
       ),
     }),
-    {}
+    {},
   );
 
   echo(info(`saving rules to ${filepath}...`));

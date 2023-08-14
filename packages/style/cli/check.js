@@ -5,7 +5,7 @@ import { execute } from './utils.js';
 export default async function check(files, quiet) {
   const args = {
     eslint: [...(quiet ? ['--quiet'] : []), ...flags.eslint, ...files],
-    prettier: ['--check', '--loglevel=warn', ...flags.prettier, ...files],
+    prettier: ['--check', ...flags.prettier, ...files],
   };
 
   echo(info('linting files...'));

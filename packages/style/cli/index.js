@@ -45,7 +45,7 @@ const {
       help: {
         type: 'boolean',
         default: false,
-        alias: 'h',
+        shortFlag: 'h',
       },
       overwrite: {
         type: 'boolean',
@@ -54,10 +54,10 @@ const {
       version: {
         type: 'boolean',
         default: false,
-        alias: 'v',
+        shortFlag: 'v',
       },
     },
-  }
+  },
 );
 
 const files = inputs.length > 0 ? inputs : ['.'];

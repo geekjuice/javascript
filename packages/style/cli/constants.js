@@ -11,5 +11,11 @@ export const flags = {
     '--report-unused-disable-directives',
     '--no-error-on-unmatched-pattern',
   ],
-  prettier: ['--ignore-unknown', '--no-error-on-unmatched-pattern'],
+  prettier: [
+    '--config-precedence=file-override',
+    '--ignore-unknown',
+    '--log-level=warn',
+    '--no-error-on-unmatched-pattern',
+    '--single-quote',
+  ],
 };

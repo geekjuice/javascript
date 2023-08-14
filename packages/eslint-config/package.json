@@ -1,6 +1,6 @@
 {
   "name": "@geekjuice/eslint-config",
-  "version": "1.3.0",
+  "version": "2.0.0",
   "description": "personal eslint configuration",
   "repository": "geekjuice/eslint-config",
   "author": "nicholas hwang <github@undefined.engineer>",
@@ -17,23 +17,23 @@
     "./typescript": "./rules/typescript.js"
   },
   "dependencies": {
-    "@rushstack/eslint-patch": "1.2.0",
-    "@typescript-eslint/eslint-plugin": "5.48.0",
-    "@typescript-eslint/parser": "5.48.0",
+    "@rushstack/eslint-patch": "1.3.3",
+    "@typescript-eslint/eslint-plugin": "6.4.0",
+    "@typescript-eslint/parser": "6.4.0",
     "eslint-config-airbnb": "19.0.4",
     "eslint-config-airbnb-base": "15.0.0",
-    "eslint-config-next": "13.1.1",
-    "eslint-config-prettier": "8.6.0",
-    "eslint-import-resolver-typescript": "3.5.2",
-    "eslint-plugin-import": "2.26.0",
-    "eslint-plugin-jsx-a11y": "6.6.1",
-    "eslint-plugin-react": "7.31.11",
+    "eslint-config-next": "13.4.15",
+    "eslint-config-prettier": "9.0.0",
+    "eslint-import-resolver-typescript": "3.6.0",
+    "eslint-plugin-import": "2.28.0",
+    "eslint-plugin-jsx-a11y": "6.7.1",
+    "eslint-plugin-react": "7.33.1",
     "eslint-plugin-react-hooks": "4.6.0",
-    "eslint-plugin-unicorn": "45.0.2"
+    "eslint-plugin-unicorn": "48.0.1"
   },
   "peerDependencies": {
-    "eslint": "8.x",
-    "typescript": "4.x"
+    "eslint": "^8.0.0",
+    "typescript": "^4.0.0 || ^5.0.0"
   },
   "peerDependenciesMeta": {
     "typescript": {

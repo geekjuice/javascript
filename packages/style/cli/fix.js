@@ -5,7 +5,7 @@ import { execute } from './utils.js';
 export default async function fix(files, quiet) {
   const args = {
     eslint: [...(quiet ? ['--quiet'] : []), '--fix', ...flags.eslint, ...files],
-    prettier: ['--write', '--loglevel=warn', ...flags.prettier, ...files],
+    prettier: ['--write', ...flags.prettier, ...files],
   };
 
   echo(info('applying linter autofixes...'));
