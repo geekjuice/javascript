@@ -15,16 +15,26 @@ module.exports = {
       },
     ],
 
-    // prettier
-    'arrow-body-style': 'off',
-    'prefer-arrow-callback': 'off',
-
     // import
     'import/no-deprecated': 'warn',
     'import/no-extraneous-dependencies': 'off',
     'import/no-named-as-default': 'off',
     'import/no-namespace': 'error',
+    'import/order': 'off',
     'import/prefer-default-export': 'off',
+
+    // perfectionist
+    'perfectionist/sort-objects': [
+      'error',
+      {
+        'partition-by-comment': true,
+        type: 'natural',
+      },
+    ],
+
+    // prettier
+    'arrow-body-style': 'off',
+    'prefer-arrow-callback': 'off',
 
     // unicorn
     'unicorn/consistent-destructuring': 'off',
@@ -34,8 +44,8 @@ module.exports = {
         cases: {
           camelCase: false,
           kebabCase: true,
-          snakeCase: false,
           pascalCase: true,
+          snakeCase: false,
         },
       },
     ],

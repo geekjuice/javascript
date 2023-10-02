@@ -1,7 +1,8 @@
+import { execa } from 'execa';
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { execa } from 'execa';
+
 import { caught, echo } from './format.js';
 
 export const read = async (filepath) => {

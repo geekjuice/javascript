@@ -5,6 +5,7 @@ module.exports = {
     'airbnb',
     'airbnb/hooks',
     'plugin:import/typescript',
+    'plugin:perfectionist/recommended-natural',
     'plugin:unicorn/recommended',
     'prettier',
     require.resolve('./rules/common'),

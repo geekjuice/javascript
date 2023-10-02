@@ -5,6 +5,7 @@ module.exports = {
     'airbnb',
     'next/core-web-vitals',
     'plugin:import/typescript',
+    'plugin:perfectionist/recommended-natural',
     'plugin:unicorn/recommended',
     'prettier',
     require.resolve('./rules/common'),

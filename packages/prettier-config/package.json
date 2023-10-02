@@ -1,12 +1,12 @@
 {
   "name": "@geekjuice/prettier-config",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "personal prettier configuration",
   "repository": "geekjuice/prettier-config",
   "author": "nicholas hwang <github@undefined.engineer>",
   "license": "MIT",
   "engines": {
-    "node": ">=16",
+    "node": ">=18",
     "npm": ">=8"
   },
   "exports": {
