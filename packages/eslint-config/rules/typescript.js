@@ -1,14 +1,15 @@
 module.exports = {
   overrides: [
     {
-      files: ['**/*.{ts,tsx}'],
-
       extends: 'plugin:@typescript-eslint/recommended',
+
+      files: ['**/*.{ts,tsx}'],
 
       parser: '@typescript-eslint/parser',
 
       plugins: ['@typescript-eslint'],
 
+      /* eslint-disable perfectionist/sort-objects */
       rules: {
         // overrides
         'no-loop-func': 'off',
@@ -22,8 +23,8 @@ module.exports = {
           'error',
           {
             allowShortCircuit: false,
-            allowTernary: false,
             allowTaggedTemplates: false,
+            allowTernary: false,
             enforceForJSX: false,
           },
         ],
@@ -46,6 +47,7 @@ module.exports = {
         // react
         'react/prop-types': 'off',
       },
+      /* eslint-enable perfectionist/sort-objects */
     },
   ],
 };
