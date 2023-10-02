@@ -1,18 +1,19 @@
 #!/usr/bin/env node
 
-import meow from 'meow';
 import chalk from 'chalk';
+import meow from 'meow';
+
+import check from './check.js';
+import fix from './fix.js';
 import { before, caught, echo, indent } from './format.js';
 import install from './install.js';
 import prepare from './prepare.js';
-import check from './check.js';
-import fix from './fix.js';
 
 const { blue, bold, cyan, dim, red } = chalk;
 
 const {
+  flags: { debug, help, overwrite, quiet, version },
   input: [command, ...inputs],
-  flags: { help, version, debug, quiet, overwrite },
   showHelp,
   showVersion,
 } = meow(
@@ -33,30 +34,30 @@ const {
     ${blue('--overwrite')}    overwrite configurations during install
 `,
   {
-    importMeta: import.meta,
     autoHelp: false,
     autoVersion: false,
     description: false,
     flags: {
       debug: {
-        type: 'boolean',
         default: false,
+        type: 'boolean',
       },
       help: {
-        type: 'boolean',
         default: false,
         shortFlag: 'h',
+        type: 'boolean',
       },
       overwrite: {
-        type: 'boolean',
         default: false,
+        type: 'boolean',
       },
       version: {
-        type: 'boolean',
         default: false,
         shortFlag: 'v',
+        type: 'boolean',
       },
     },
+    importMeta: import.meta,
   },
 );
 

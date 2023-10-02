@@ -1,7 +1,8 @@
+import dedent from 'dedent';
 import fs from 'node:fs/promises';
 import path from 'node:path';
-import dedent from 'dedent';
 import prettier from 'prettier';
+
 import { pragma } from './constants.js';
 import { before, done, echo, info, warn, yay } from './format.js';
 import { exists, project, read } from './utils.js';
@@ -43,9 +44,9 @@ export default async function install(overwrite) {
     };
     pkg.scripts = {
       ...pkg.scripts,
-      prepare: 'husky install',
       check: 'style check',
       fix: 'style fix',
+      prepare: 'husky install',
     };
 
     const json = prettify(JSON.stringify(pkg), 'json-stringify');
