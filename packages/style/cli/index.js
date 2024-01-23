@@ -1,6 +1,11 @@
 #!/usr/bin/env node
 
 import chalk from 'chalk';
+/**
+ * NOTE: `meow` no longer has a `main` field in its `package.json` which is
+ *       still required by `eslint-plugin-import` until it supports pure ESM.
+ */
+// eslint-disable-next-line import/no-unresolved
 import meow from 'meow';
 
 import check from './check.js';

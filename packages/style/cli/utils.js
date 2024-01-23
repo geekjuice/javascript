@@ -5,9 +5,9 @@ import { fileURLToPath } from 'node:url';
 
 import { caught, echo } from './format.js';
 
-export const read = async (filepath) => {
+export const read = async (filepath, json = true) => {
   const data = await fs.readFile(filepath);
-  return JSON.parse(data);
+  return json ? JSON.parse(data) : data.toString();
 };
 
 export const project = async () => {
