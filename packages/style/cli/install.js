@@ -48,7 +48,7 @@ export default async function install(overwrite) {
       ...draft.scripts,
       check: 'style check',
       fix: 'style fix',
-      prepare: 'husky install',
+      prepare: 'husky',
     };
 
     const original = await prettify(JSON.stringify(pkg), 'json-stringify');
@@ -85,11 +85,7 @@ export default async function install(overwrite) {
   `;
 
   const precommit = dedent`
-    #!/usr/bin/env sh
-
     # ${pragma}
-
-    . "$(dirname -- "$0")/_/husky.sh"
 
     npm exec lint-staged\n
   `;

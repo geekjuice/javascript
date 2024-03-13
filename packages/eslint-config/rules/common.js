@@ -24,10 +24,19 @@ module.exports = {
     'import/prefer-default-export': 'off',
 
     // perfectionist
+    'perfectionist/sort-object-types': [
+      'error',
+      {
+        'partition-by-new-line': true,
+        type: 'natural',
+      },
+    ],
+
     'perfectionist/sort-objects': [
       'error',
       {
         'partition-by-comment': true,
+        'partition-by-new-line': true,
         type: 'natural',
       },
     ],
@@ -37,7 +46,6 @@ module.exports = {
     'prefer-arrow-callback': 'off',
 
     // unicorn
-    'unicorn/consistent-destructuring': 'off',
     'unicorn/filename-case': [
       'warn',
       {

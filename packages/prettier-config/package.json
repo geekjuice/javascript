@@ -1,6 +1,6 @@
 {
   "name": "@geekjuice/prettier-config",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "description": "personal prettier configuration",
   "repository": "geekjuice/prettier-config",
   "author": "nicholas hwang <github@undefined.engineer>",
@@ -13,7 +13,7 @@
     ".": "./index.js"
   },
   "peerDependencies": {
-    "prettier": "3.2.4"
+    "prettier": "3.2.5"
   },
   "prettier": "@geekjuice/prettier-config"
 }
