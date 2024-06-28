@@ -10,10 +10,11 @@
   },
   "scripts": {
     "prepare": "husky",
-    "check": "./packages/style/cli/index.js check",
-    "fix": "./packages/style/cli/index.js fix"
+    "check": "style check",
+    "fix": "style fix"
   },
   "devDependencies": {
-    "@changesets/cli": "2.27.6"
+    "@changesets/cli": "2.27.6",
+    "@geekjuice/style": "workspace:*"
   }
 }

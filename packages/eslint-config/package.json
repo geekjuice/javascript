@@ -31,14 +31,5 @@
     "eslint-plugin-react": "7.34.0",
     "eslint-plugin-react-hooks": "4.6.0",
     "eslint-plugin-unicorn": "51.0.1"
-  },
-  "peerDependencies": {
-    "eslint": "^8.56.0",
-    "typescript": "^5.3.3"
-  },
-  "peerDependenciesMeta": {
-    "typescript": {
-      "optional": true
-    }
   }
 }
