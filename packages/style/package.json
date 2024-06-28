@@ -18,15 +18,11 @@
   ],
   "dependencies": {
     "@biomejs/biome": "1.8.3",
-    "@geekjuice/eslint-config": "workspace:*",
-    "@geekjuice/prettier-config": "workspace:*",
     "chalk": "5.3.0",
     "dedent": "1.5.3",
-    "eslint": "8.57.0",
     "execa": "9.3.0",
     "husky": "9.0.11",
     "lint-staged": "15.2.7",
-    "meow": "13.2.0",
-    "prettier": "3.3.2"
+    "meow": "13.2.0"
   }
 }
