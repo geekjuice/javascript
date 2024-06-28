@@ -8,17 +8,12 @@
     "node": ">=18",
     "npm": ">=8"
   },
-  "workspaces": [
-    "packages/eslint-config",
-    "packages/prettier-config",
-    "packages/style"
-  ],
   "scripts": {
-    "prepare": "husky install",
+    "prepare": "husky",
     "check": "./packages/style/cli/index.js check",
     "fix": "./packages/style/cli/index.js fix"
   },
   "devDependencies": {
-    "@changesets/cli": "2.27.1"
+    "@changesets/cli": "2.27.6"
   }
 }
