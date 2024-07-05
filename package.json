@@ -5,20 +5,15 @@
   "author": "nicholas hwang <github@undefined.engineer>",
   "license": "MIT",
   "engines": {
-    "node": ">=18",
-    "npm": ">=8"
+    "node": ">=20"
   },
-  "workspaces": [
-    "packages/eslint-config",
-    "packages/prettier-config",
-    "packages/style"
-  ],
   "scripts": {
-    "prepare": "husky install",
-    "check": "./packages/style/cli/index.js check",
-    "fix": "./packages/style/cli/index.js fix"
+    "prepare": "husky",
+    "check": "style check",
+    "fix": "style fix"
   },
   "devDependencies": {
-    "@changesets/cli": "2.27.1"
+    "@changesets/cli": "2.27.7",
+    "@geekjuice/style": "workspace:*"
   }
 }
