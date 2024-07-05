@@ -12,7 +12,6 @@
     ".": "./index.js",
     "./base": "./base.js",
     "./next": "./next.js",
-    "./esm": "./rules/esm.js",
     "./typescript": "./rules/typescript.js"
   },
   "dependencies": {

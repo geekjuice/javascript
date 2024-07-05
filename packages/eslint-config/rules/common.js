@@ -16,6 +16,7 @@ module.exports = {
     ],
 
     // import
+    'import/extensions': 'off',
     'import/no-deprecated': 'warn',
     'import/no-extraneous-dependencies': 'off',
     'import/no-named-as-default': 'off',
