@@ -12,7 +12,13 @@
   "linter": {
     "enabled": true,
     "rules": {
-      "recommended": true
+      "all": true,
+      "correctness": {
+        "noNodejsModules": "off"
+      },
+      "style": {
+        "noDefaultExport": "off"
+      }
     }
   },
   "organizeImports": {

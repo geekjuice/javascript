@@ -13,9 +13,7 @@
   "bin": {
     "style": "./cli/index.js"
   },
-  "files": [
-    "cli"
-  ],
+  "files": ["cli"],
   "dependencies": {
     "@biomejs/biome": "1.8.3",
     "chalk": "5.3.0",

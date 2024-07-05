@@ -3,7 +3,7 @@ import chalk from 'chalk';
 const { dim, green, magenta, red, yellow } = chalk;
 
 export const echo = (message) => {
-  // eslint-disable-next-line no-console
+  // biome-ignore lint/suspicious/noConsoleLog: <explanation>
   console.log(message);
 };
 
