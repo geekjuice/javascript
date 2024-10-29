@@ -16,6 +16,7 @@ module.exports = {
     ],
 
     // import
+    'import/extensions': 'off',
     'import/no-deprecated': 'warn',
     'import/no-extraneous-dependencies': 'off',
     'import/no-named-as-default': 'off',
@@ -27,7 +28,7 @@ module.exports = {
     'perfectionist/sort-object-types': [
       'error',
       {
-        'partition-by-new-line': true,
+        partitionByNewLine: true,
         type: 'natural',
       },
     ],
@@ -35,8 +36,8 @@ module.exports = {
     'perfectionist/sort-objects': [
       'error',
       {
-        'partition-by-comment': true,
-        'partition-by-new-line': true,
+        partitionByComment: true,
+        partitionByNewLine: true,
         type: 'natural',
       },
     ],

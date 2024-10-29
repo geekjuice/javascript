@@ -1,19 +1,18 @@
 {
   "name": "@geekjuice/prettier-config",
-  "version": "2.3.0",
+  "version": "2.4.0",
   "description": "personal prettier configuration",
   "repository": "geekjuice/prettier-config",
   "author": "nicholas hwang <github@undefined.engineer>",
   "license": "MIT",
   "engines": {
-    "node": ">=18",
-    "npm": ">=8"
+    "node": ">=20"
   },
   "exports": {
     ".": "./index.js"
   },
   "peerDependencies": {
-    "prettier": "3.2.5"
+    "prettier": "3.x"
   },
   "prettier": "@geekjuice/prettier-config"
 }
